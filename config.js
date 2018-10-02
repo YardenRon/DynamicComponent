@@ -2,7 +2,7 @@
     views: [
         {
             name: "",
-            components: []
+            cubes: []
         }
     ]
 }

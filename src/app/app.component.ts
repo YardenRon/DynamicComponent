@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'DynamicComponent';
+
+  selectedView: string;
+
+  onViewChange(): void {
+    alert(this.selectedView);
+  }
 }

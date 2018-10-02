@@ -1,5 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<!-- <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
   </h1>
@@ -18,4 +18,11 @@
   </li>
 </ul>
 
-<router-outlet></router-outlet>
+<router-outlet></router-outlet> -->
+<div class="view-selector-cotainer">
+  <select class="view-selector" [(ngModel)]="selectedView" (ngModelChange)="onViewChange()">
+    <option value="view1"> View 1</option>
+    <option value="view2"> View 2</option>
+    <option value="view3"> View 3</option>
+  </select>
+</div>
