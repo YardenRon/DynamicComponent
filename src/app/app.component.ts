@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { viewsConfig } from './views-config';
+import { View } from './shared/models/view.model';
+import { Cube } from './shared/models/cube.model';
 
 @Component({
   selector: 'app-root',
@@ -8,14 +10,21 @@ import { viewsConfig } from './views-config';
 })
 export class AppComponent implements OnInit {
 
-  selectedView: string;
-  views: string[];
+  selectedViewName: string;
+  selectedView: View;
+  views: View[];
 
   ngOnInit(): void {
-    this.views = viewsConfig.map(view => view.name);
+    this.views = viewsConfig;
+    this.selectedView = this.views[0];
+    this.selectedViewName = this.selectedView.name;
   }
 
   onViewChange(): void {
-    alert(this.selectedView);
+    alert(this.selectedViewName);
+    if (this.selectedViewName) {
+      this.selectedView = this.views.filter(view => view.name === this.selectedViewName)[0];
+    }
   }
+
 }

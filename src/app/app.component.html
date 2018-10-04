@@ -1,5 +1,8 @@
 <div class="view-selector-cotainer">
-  <select class="view-selector" [(ngModel)]="selectedView" (ngModelChange)="onViewChange()">
-    <option *ngFor="let view of views" value="{{view}}"> {{ view }} </option>
+  <select class="view-selector" [(ngModel)]="selectedViewName" (ngModelChange)="onViewChange()">
+    <option *ngFor="let view of views" value="{{ view.name }}"> {{ view.name }} </option>
   </select>
+</div>
+<div class="dynamic-container-area">
+  <dynamic-container [cubes]="selectedView.cubes"></dynamic-container>
 </div>
