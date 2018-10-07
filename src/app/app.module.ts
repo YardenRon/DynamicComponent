@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DynamicContainerComponent } from './dynamic-container/dynamic-container.component';
 import { DynamicHostDirective } from './shared/directives/dynamic-host.directive';
+import { ColoredItemComponent } from './components/colored-item/colored-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DynamicContainerComponent,
-    DynamicHostDirective
+    DynamicHostDirective,
+    ColoredItemComponent
   ],
   imports: [
     BrowserModule,
