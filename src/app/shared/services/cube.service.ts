@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Cube } from '../models/cube.model';
 import { viewsConfig } from '../../views-config';
-import { ColoredItemComponent } from '../../components/colored-item/colored-item.component';
 
 @Injectable({
   providedIn: 'root'

@@ -21,6 +21,7 @@ import { ColoredItemComponent } from './components/colored-item/colored-item.com
     AppRoutingModule
   ],
   providers: [],
+  entryComponents: [ColoredItemComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
