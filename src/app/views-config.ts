@@ -62,7 +62,7 @@ export const viewsConfig: View[] = [
             {
                 component: ColoredItemComponent,
                 data: {
-                    name: "small Component",
+                    name: "Small Component",
                     color: "red",
                     size: 1
                 }
